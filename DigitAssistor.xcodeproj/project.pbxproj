@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B529F69269996690075DDA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B529F68269996690075DDA2 /* Foundation.framework */; };
+		8B529F6B269996690075DDA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B529F6A269996690075DDA2 /* CoreGraphics.framework */; };
+		8B529F6D269996690075DDA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B529F6C269996690075DDA2 /* UIKit.framework */; };
+		8B529F73269996690075DDA2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B529F71269996690075DDA2 /* InfoPlist.strings */; };
+		8B529F75269996690075DDA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B529F74269996690075DDA2 /* main.m */; };
+		8B529F79269996690075DDA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B529F78269996690075DDA2 /* AppDelegate.m */; };
+		8B529F87269996690075DDA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B529F86269996690075DDA2 /* Images.xcassets */; };
+		8B529F8E269996690075DDA2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B529F8D269996690075DDA2 /* XCTest.framework */; };
+		8B529F8F269996690075DDA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B529F68269996690075DDA2 /* Foundation.framework */; };
+		8B529F90269996690075DDA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B529F6C269996690075DDA2 /* UIKit.framework */; };
+		8B529F98269996690075DDA2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B529F96269996690075DDA2 /* InfoPlist.strings */; };
+		8B529F9A269996690075DDA2 /* DigitAssistorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B529F99269996690075DDA2 /* DigitAssistorTests.m */; };
+		8B529FAD26999A090075DDA2 /* DDGForthPlanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B529FA426999A090075DDA2 /* DDGForthPlanTableViewController.m */; };
+		8B529FAE26999A090075DDA2 /* DDGMasterTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B529FA626999A090075DDA2 /* DDGMasterTaskViewController.m */; };
+		8B529FAF26999A090075DDA2 /* DDGSlaveReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B529FA826999A090075DDA2 /* DDGSlaveReadViewController.m */; };
+		8B529FB026999A090075DDA2 /* DDGTripleProjTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B529FAA26999A090075DDA2 /* DDGTripleProjTableViewController.m */; };
+		8B529FB126999A090075DDA2 /* DDGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B529FAC26999A090075DDA2 /* DDGViewController.m */; };
+		8B529FBC26999B2D0075DDA2 /* DDGCusTaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B529FB426999B2D0075DDA2 /* DDGCusTaskTableViewCell.m */; };
+		8B529FBD26999B2D0075DDA2 /* DDGCusTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B529FB526999B2D0075DDA2 /* DDGCusTaskTableViewCell.xib */; };
+		8B529FBE26999B2D0075DDA2 /* DDGGenericLableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B529FB726999B2D0075DDA2 /* DDGGenericLableController.m */; };
+		8B529FBF26999B2D0075DDA2 /* DDGGenericLableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B529FB826999B2D0075DDA2 /* DDGGenericLableController.xib */; };
+		8B529FC026999B2D0075DDA2 /* DDGGenericTableCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B529FBA26999B2D0075DDA2 /* DDGGenericTableCellController.m */; };
+		8B529FC126999B2D0075DDA2 /* DDGGenericTableCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B529FBB26999B2D0075DDA2 /* DDGGenericTableCellController.xib */; };
+		8B8F56482699AE9900192A9E /* DDGBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F563F2699AE9900192A9E /* DDGBook.m */; };
+		8B8F56492699AE9900192A9E /* DDGBookStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56412699AE9900192A9E /* DDGBookStore.m */; };
+		8B8F564A2699AE9900192A9E /* DDGBookTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56432699AE9900192A9E /* DDGBookTaskViewController.m */; };
+		8B8F564B2699AE9900192A9E /* DDGBookTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F56442699AE9900192A9E /* DDGBookTaskViewController.xib */; };
+		8B8F564C2699AE9900192A9E /* DDGDetailBookInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56462699AE9900192A9E /* DDGDetailBookInfoViewController.m */; };
+		8B8F564D2699AE9900192A9E /* DDGDetailBookInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F56472699AE9900192A9E /* DDGDetailBookInfoViewController.xib */; };
+		8B8F56522699AF9400192A9E /* DDGDBExecutor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56512699AF9400192A9E /* DDGDBExecutor.mm */; };
+		8B8F56792699AFC300192A9E /* DDGEventTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56552699AFC300192A9E /* DDGEventTask.m */; };
+		8B8F567A2699AFC300192A9E /* DDGEventTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56572699AFC300192A9E /* DDGEventTaskViewController.m */; };
+		8B8F567B2699AFC300192A9E /* DDGEventTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F56582699AFC300192A9E /* DDGEventTaskViewController.xib */; };
+		8B8F567C2699AFC300192A9E /* DDGMallTaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F565A2699AFC300192A9E /* DDGMallTaskDetailViewController.m */; };
+		8B8F567D2699AFC300192A9E /* DDGMallTaskDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F565B2699AFC300192A9E /* DDGMallTaskDetailViewController.xib */; };
+		8B8F567E2699AFC300192A9E /* DDGMallTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F565D2699AFC300192A9E /* DDGMallTaskViewController.m */; };
+		8B8F567F2699AFC300192A9E /* DDGMallTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F565E2699AFC300192A9E /* DDGMallTaskViewController.xib */; };
+		8B8F56802699AFC300192A9E /* DDGNewTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56602699AFC300192A9E /* DDGNewTaskViewController.m */; };
+		8B8F56812699AFC300192A9E /* DDGNewTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F56612699AFC300192A9E /* DDGNewTaskViewController.xib */; };
+		8B8F56822699AFC300192A9E /* DDGProjectTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56632699AFC300192A9E /* DDGProjectTask.m */; };
+		8B8F56832699AFC300192A9E /* DDGProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56652699AFC300192A9E /* DDGProjectViewController.m */; };
+		8B8F56842699AFC300192A9E /* DDGProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F56662699AFC300192A9E /* DDGProjectViewController.xib */; };
+		8B8F56852699AFC300192A9E /* DDGReadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56682699AFC300192A9E /* DDGReadTask.m */; };
+		8B8F56862699AFC300192A9E /* DDGShopTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F566A2699AFC300192A9E /* DDGShopTask.m */; };
+		8B8F56872699AFC300192A9E /* DDGTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F566C2699AFC300192A9E /* DDGTask.m */; };
+		8B8F56882699AFC300192A9E /* DDGTaskDateTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F566E2699AFC300192A9E /* DDGTaskDateTimeViewController.m */; };
+		8B8F56892699AFC300192A9E /* DDGTaskDateTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F566F2699AFC300192A9E /* DDGTaskDateTimeViewController.xib */; };
+		8B8F568A2699AFC300192A9E /* DDGTaskDBManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56702699AFC300192A9E /* DDGTaskDBManager.cpp */; };
+		8B8F568B2699AFC300192A9E /* DDGTaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56732699AFC300192A9E /* DDGTaskDetailViewController.m */; };
+		8B8F568C2699AFC300192A9E /* DDGTaskDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F56742699AFC300192A9E /* DDGTaskDetailViewController.xib */; };
+		8B8F568D2699AFC300192A9E /* DDGTaskStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56762699AFC300192A9E /* DDGTaskStore.m */; };
+		8B8F568E2699AFC300192A9E /* DDGTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56782699AFC300192A9E /* DDGTaskViewController.m */; };
+		8B8F56922699B00900192A9E /* DDGNetworker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56912699B00900192A9E /* DDGNetworker.m */; };
+		8B8F56982699B05A00192A9E /* DDGQRCoderScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56962699B05A00192A9E /* DDGQRCoderScanViewController.m */; };
+		8B8F56992699B05A00192A9E /* DDGQRCoderScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F56972699B05A00192A9E /* DDGQRCoderScanViewController.xib */; };
+		8B8F569C2699B08C00192A9E /* DDGViewCtrlStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F569B2699B08C00192A9E /* DDGViewCtrlStore.m */; };
+		8B8F56A02699B0C300192A9E /* DDGDTimeCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F569F2699B0C300192A9E /* DDGDTimeCommon.m */; };
+		8B8F56A42699B10700192A9E /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56A32699B10700192A9E /* KxMenu.m */; };
+		8B8F56A82699B12200192A9E /* DDGPlanStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56A72699B12200192A9E /* DDGPlanStore.m */; };
+		8B8F56AD2699B13B00192A9E /* DDGSQLiteTaskStore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56AA2699B13B00192A9E /* DDGSQLiteTaskStore.mm */; };
+		8B8F56AE2699B13B00192A9E /* SQLite3Cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F56AB2699B13B00192A9E /* SQLite3Cpp.cpp */; };
+		8B8F56B02699B23100192A9E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8F56AF2699B23100192A9E /* libsqlite3.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B529F91269996690075DDA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B529F5D269996690075DDA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B529F64269996690075DDA2;
+			remoteInfo = DigitAssistor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B529F65269996690075DDA2 /* DigitAssistor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitAssistor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B529F68269996690075DDA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8B529F6A269996690075DDA2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8B529F6C269996690075DDA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8B529F70269996690075DDA2 /* DigitAssistor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitAssistor-Info.plist"; sourceTree = "<group>"; };
+		8B529F72269996690075DDA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B529F74269996690075DDA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B529F76269996690075DDA2 /* DigitAssistor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DigitAssistor-Prefix.pch"; sourceTree = "<group>"; };
+		8B529F77269996690075DDA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B529F78269996690075DDA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B529F86269996690075DDA2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8B529F8C269996690075DDA2 /* DigitAssistorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitAssistorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B529F8D269996690075DDA2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8B529F95269996690075DDA2 /* DigitAssistorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitAssistorTests-Info.plist"; sourceTree = "<group>"; };
+		8B529F97269996690075DDA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B529F99269996690075DDA2 /* DigitAssistorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitAssistorTests.m; sourceTree = "<group>"; };
+		8B529FA326999A090075DDA2 /* DDGForthPlanTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGForthPlanTableViewController.h; sourceTree = "<group>"; };
+		8B529FA426999A090075DDA2 /* DDGForthPlanTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGForthPlanTableViewController.m; sourceTree = "<group>"; };
+		8B529FA526999A090075DDA2 /* DDGMasterTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGMasterTaskViewController.h; sourceTree = "<group>"; };
+		8B529FA626999A090075DDA2 /* DDGMasterTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGMasterTaskViewController.m; sourceTree = "<group>"; };
+		8B529FA726999A090075DDA2 /* DDGSlaveReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGSlaveReadViewController.h; sourceTree = "<group>"; };
+		8B529FA826999A090075DDA2 /* DDGSlaveReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGSlaveReadViewController.m; sourceTree = "<group>"; };
+		8B529FA926999A090075DDA2 /* DDGTripleProjTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGTripleProjTableViewController.h; sourceTree = "<group>"; };
+		8B529FAA26999A090075DDA2 /* DDGTripleProjTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGTripleProjTableViewController.m; sourceTree = "<group>"; };
+		8B529FAB26999A090075DDA2 /* DDGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGViewController.h; sourceTree = "<group>"; };
+		8B529FAC26999A090075DDA2 /* DDGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGViewController.m; sourceTree = "<group>"; };
+		8B529FB326999B2D0075DDA2 /* DDGCusTaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGCusTaskTableViewCell.h; path = UI/DDGCusTaskTableViewCell.h; sourceTree = "<group>"; };
+		8B529FB426999B2D0075DDA2 /* DDGCusTaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGCusTaskTableViewCell.m; path = UI/DDGCusTaskTableViewCell.m; sourceTree = "<group>"; };
+		8B529FB526999B2D0075DDA2 /* DDGCusTaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DDGCusTaskTableViewCell.xib; path = UI/DDGCusTaskTableViewCell.xib; sourceTree = "<group>"; };
+		8B529FB626999B2D0075DDA2 /* DDGGenericLableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGGenericLableController.h; path = UI/DDGGenericLableController.h; sourceTree = "<group>"; };
+		8B529FB726999B2D0075DDA2 /* DDGGenericLableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGGenericLableController.m; path = UI/DDGGenericLableController.m; sourceTree = "<group>"; };
+		8B529FB826999B2D0075DDA2 /* DDGGenericLableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DDGGenericLableController.xib; path = UI/DDGGenericLableController.xib; sourceTree = "<group>"; };
+		8B529FB926999B2D0075DDA2 /* DDGGenericTableCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGGenericTableCellController.h; path = UI/DDGGenericTableCellController.h; sourceTree = "<group>"; };
+		8B529FBA26999B2D0075DDA2 /* DDGGenericTableCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGGenericTableCellController.m; path = UI/DDGGenericTableCellController.m; sourceTree = "<group>"; };
+		8B529FBB26999B2D0075DDA2 /* DDGGenericTableCellController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DDGGenericTableCellController.xib; path = UI/DDGGenericTableCellController.xib; sourceTree = "<group>"; };
+		8B8F563E2699AE9900192A9E /* DDGBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGBook.h; path = Books/DDGBook.h; sourceTree = "<group>"; };
+		8B8F563F2699AE9900192A9E /* DDGBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGBook.m; path = Books/DDGBook.m; sourceTree = "<group>"; };
+		8B8F56402699AE9900192A9E /* DDGBookStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGBookStore.h; path = Books/DDGBookStore.h; sourceTree = "<group>"; };
+		8B8F56412699AE9900192A9E /* DDGBookStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGBookStore.m; path = Books/DDGBookStore.m; sourceTree = "<group>"; };
+		8B8F56422699AE9900192A9E /* DDGBookTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGBookTaskViewController.h; path = Books/DDGBookTaskViewController.h; sourceTree = "<group>"; };
+		8B8F56432699AE9900192A9E /* DDGBookTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGBookTaskViewController.m; path = Books/DDGBookTaskViewController.m; sourceTree = "<group>"; };
+		8B8F56442699AE9900192A9E /* DDGBookTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DDGBookTaskViewController.xib; path = Books/DDGBookTaskViewController.xib; sourceTree = "<group>"; };
+		8B8F56452699AE9900192A9E /* DDGDetailBookInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGDetailBookInfoViewController.h; path = Books/DDGDetailBookInfoViewController.h; sourceTree = "<group>"; };
+		8B8F56462699AE9900192A9E /* DDGDetailBookInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGDetailBookInfoViewController.m; path = Books/DDGDetailBookInfoViewController.m; sourceTree = "<group>"; };
+		8B8F56472699AE9900192A9E /* DDGDetailBookInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DDGDetailBookInfoViewController.xib; path = Books/DDGDetailBookInfoViewController.xib; sourceTree = "<group>"; };
+		8B8F56502699AF9400192A9E /* DDGDBExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGDBExecutor.h; path = DBs/DDGDBExecutor.h; sourceTree = "<group>"; };
+		8B8F56512699AF9400192A9E /* DDGDBExecutor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DDGDBExecutor.mm; path = DBs/DDGDBExecutor.mm; sourceTree = "<group>"; };
+		8B8F56542699AFC300192A9E /* DDGEventTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGEventTask.h; path = Tasks/DDGEventTask.h; sourceTree = "<group>"; };
+		8B8F56552699AFC300192A9E /* DDGEventTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGEventTask.m; path = Tasks/DDGEventTask.m; sourceTree = "<group>"; };
+		8B8F56562699AFC300192A9E /* DDGEventTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGEventTaskViewController.h; path = Tasks/DDGEventTaskViewController.h; sourceTree = "<group>"; };
+		8B8F56572699AFC300192A9E /* DDGEventTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGEventTaskViewController.m; path = Tasks/DDGEventTaskViewController.m; sourceTree = "<group>"; };
+		8B8F56582699AFC300192A9E /* DDGEventTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DDGEventTaskViewController.xib; path = Tasks/DDGEventTaskViewController.xib; sourceTree = "<group>"; };
+		8B8F56592699AFC300192A9E /* DDGMallTaskDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGMallTaskDetailViewController.h; path = Tasks/DDGMallTaskDetailViewController.h; sourceTree = "<group>"; };
+		8B8F565A2699AFC300192A9E /* DDGMallTaskDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGMallTaskDetailViewController.m; path = Tasks/DDGMallTaskDetailViewController.m; sourceTree = "<group>"; };
+		8B8F565B2699AFC300192A9E /* DDGMallTaskDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DDGMallTaskDetailViewController.xib; path = Tasks/DDGMallTaskDetailViewController.xib; sourceTree = "<group>"; };
+		8B8F565C2699AFC300192A9E /* DDGMallTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGMallTaskViewController.h; path = Tasks/DDGMallTaskViewController.h; sourceTree = "<group>"; };
+		8B8F565D2699AFC300192A9E /* DDGMallTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGMallTaskViewController.m; path = Tasks/DDGMallTaskViewController.m; sourceTree = "<group>"; };
+		8B8F565E2699AFC300192A9E /* DDGMallTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DDGMallTaskViewController.xib; path = Tasks/DDGMallTaskViewController.xib; sourceTree = "<group>"; };
+		8B8F565F2699AFC300192A9E /* DDGNewTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGNewTaskViewController.h; path = Tasks/DDGNewTaskViewController.h; sourceTree = "<group>"; };
+		8B8F56602699AFC300192A9E /* DDGNewTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGNewTaskViewController.m; path = Tasks/DDGNewTaskViewController.m; sourceTree = "<group>"; };
+		8B8F56612699AFC300192A9E /* DDGNewTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DDGNewTaskViewController.xib; path = Tasks/DDGNewTaskViewController.xib; sourceTree = "<group>"; };
+		8B8F56622699AFC300192A9E /* DDGProjectTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGProjectTask.h; path = Tasks/DDGProjectTask.h; sourceTree = "<group>"; };
+		8B8F56632699AFC300192A9E /* DDGProjectTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGProjectTask.m; path = Tasks/DDGProjectTask.m; sourceTree = "<group>"; };
+		8B8F56642699AFC300192A9E /* DDGProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGProjectViewController.h; path = Tasks/DDGProjectViewController.h; sourceTree = "<group>"; };
+		8B8F56652699AFC300192A9E /* DDGProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGProjectViewController.m; path = Tasks/DDGProjectViewController.m; sourceTree = "<group>"; };
+		8B8F56662699AFC300192A9E /* DDGProjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DDGProjectViewController.xib; path = Tasks/DDGProjectViewController.xib; sourceTree = "<group>"; };
+		8B8F56672699AFC300192A9E /* DDGReadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGReadTask.h; path = Tasks/DDGReadTask.h; sourceTree = "<group>"; };
+		8B8F56682699AFC300192A9E /* DDGReadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGReadTask.m; path = Tasks/DDGReadTask.m; sourceTree = "<group>"; };
+		8B8F56692699AFC300192A9E /* DDGShopTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGShopTask.h; path = Tasks/DDGShopTask.h; sourceTree = "<group>"; };
+		8B8F566A2699AFC300192A9E /* DDGShopTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGShopTask.m; path = Tasks/DDGShopTask.m; sourceTree = "<group>"; };
+		8B8F566B2699AFC300192A9E /* DDGTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGTask.h; path = Tasks/DDGTask.h; sourceTree = "<group>"; };
+		8B8F566C2699AFC300192A9E /* DDGTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGTask.m; path = Tasks/DDGTask.m; sourceTree = "<group>"; };
+		8B8F566D2699AFC300192A9E /* DDGTaskDateTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGTaskDateTimeViewController.h; path = Tasks/DDGTaskDateTimeViewController.h; sourceTree = "<group>"; };
+		8B8F566E2699AFC300192A9E /* DDGTaskDateTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGTaskDateTimeViewController.m; path = Tasks/DDGTaskDateTimeViewController.m; sourceTree = "<group>"; };
+		8B8F566F2699AFC300192A9E /* DDGTaskDateTimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DDGTaskDateTimeViewController.xib; path = Tasks/DDGTaskDateTimeViewController.xib; sourceTree = "<group>"; };
+		8B8F56702699AFC300192A9E /* DDGTaskDBManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DDGTaskDBManager.cpp; path = Tasks/DDGTaskDBManager.cpp; sourceTree = "<group>"; };
+		8B8F56712699AFC300192A9E /* DDGTaskDBManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DDGTaskDBManager.hpp; path = Tasks/DDGTaskDBManager.hpp; sourceTree = "<group>"; };
+		8B8F56722699AFC300192A9E /* DDGTaskDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGTaskDetailViewController.h; path = Tasks/DDGTaskDetailViewController.h; sourceTree = "<group>"; };
+		8B8F56732699AFC300192A9E /* DDGTaskDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGTaskDetailViewController.m; path = Tasks/DDGTaskDetailViewController.m; sourceTree = "<group>"; };
+		8B8F56742699AFC300192A9E /* DDGTaskDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DDGTaskDetailViewController.xib; path = Tasks/DDGTaskDetailViewController.xib; sourceTree = "<group>"; };
+		8B8F56752699AFC300192A9E /* DDGTaskStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGTaskStore.h; path = Tasks/DDGTaskStore.h; sourceTree = "<group>"; };
+		8B8F56762699AFC300192A9E /* DDGTaskStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGTaskStore.m; path = Tasks/DDGTaskStore.m; sourceTree = "<group>"; };
+		8B8F56772699AFC300192A9E /* DDGTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGTaskViewController.h; path = Tasks/DDGTaskViewController.h; sourceTree = "<group>"; };
+		8B8F56782699AFC300192A9E /* DDGTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGTaskViewController.m; path = Tasks/DDGTaskViewController.m; sourceTree = "<group>"; };
+		8B8F56902699B00900192A9E /* DDGNetworker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGNetworker.h; path = Network/DDGNetworker.h; sourceTree = "<group>"; };
+		8B8F56912699B00900192A9E /* DDGNetworker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGNetworker.m; path = Network/DDGNetworker.m; sourceTree = "<group>"; };
+		8B8F56952699B05A00192A9E /* DDGQRCoderScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGQRCoderScanViewController.h; path = QRCode/DDGQRCoderScanViewController.h; sourceTree = "<group>"; };
+		8B8F56962699B05A00192A9E /* DDGQRCoderScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGQRCoderScanViewController.m; path = QRCode/DDGQRCoderScanViewController.m; sourceTree = "<group>"; };
+		8B8F56972699B05A00192A9E /* DDGQRCoderScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DDGQRCoderScanViewController.xib; path = QRCode/DDGQRCoderScanViewController.xib; sourceTree = "<group>"; };
+		8B8F569A2699B08C00192A9E /* DDGViewCtrlStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGViewCtrlStore.h; path = UI/DDGViewCtrlStore.h; sourceTree = "<group>"; };
+		8B8F569B2699B08C00192A9E /* DDGViewCtrlStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGViewCtrlStore.m; path = UI/DDGViewCtrlStore.m; sourceTree = "<group>"; };
+		8B8F569E2699B0C300192A9E /* DDGDTimeCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGDTimeCommon.h; path = Common/DDGDTimeCommon.h; sourceTree = "<group>"; };
+		8B8F569F2699B0C300192A9E /* DDGDTimeCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGDTimeCommon.m; path = Common/DDGDTimeCommon.m; sourceTree = "<group>"; };
+		8B8F56A22699B10700192A9E /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxMenu.h; path = Source/KxMenu.h; sourceTree = "<group>"; };
+		8B8F56A32699B10700192A9E /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxMenu.m; path = Source/KxMenu.m; sourceTree = "<group>"; };
+		8B8F56A62699B12200192A9E /* DDGPlanStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGPlanStore.h; path = Plans/DDGPlanStore.h; sourceTree = "<group>"; };
+		8B8F56A72699B12200192A9E /* DDGPlanStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDGPlanStore.m; path = Plans/DDGPlanStore.m; sourceTree = "<group>"; };
+		8B8F56A92699B13B00192A9E /* DDGSQLiteTaskStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDGSQLiteTaskStore.h; path = DBs/DDGSQLiteTaskStore.h; sourceTree = "<group>"; };
+		8B8F56AA2699B13B00192A9E /* DDGSQLiteTaskStore.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DDGSQLiteTaskStore.mm; path = DBs/DDGSQLiteTaskStore.mm; sourceTree = "<group>"; };
+		8B8F56AB2699B13B00192A9E /* SQLite3Cpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SQLite3Cpp.cpp; path = DBs/SQLite3Cpp.cpp; sourceTree = "<group>"; };
+		8B8F56AC2699B13B00192A9E /* SQLite3Cpp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SQLite3Cpp.hpp; path = DBs/SQLite3Cpp.hpp; sourceTree = "<group>"; };
+		8B8F56AF2699B23100192A9E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libsqlite3.dylib; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B529F62269996690075DDA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B8F56B02699B23100192A9E /* libsqlite3.dylib in Frameworks */,
+				8B529F6B269996690075DDA2 /* CoreGraphics.framework in Frameworks */,
+				8B529F6D269996690075DDA2 /* UIKit.framework in Frameworks */,
+				8B529F69269996690075DDA2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B529F89269996690075DDA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B529F8E269996690075DDA2 /* XCTest.framework in Frameworks */,
+				8B529F90269996690075DDA2 /* UIKit.framework in Frameworks */,
+				8B529F8F269996690075DDA2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B529F5C269996690075DDA2 = {
+			isa = PBXGroup;
+			children = (
+				8B529F6E269996690075DDA2 /* DigitAssistor */,
+				8B529F93269996690075DDA2 /* DigitAssistorTests */,
+				8B529F67269996690075DDA2 /* Frameworks */,
+				8B529F66269996690075DDA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B529F66269996690075DDA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B529F65269996690075DDA2 /* DigitAssistor.app */,
+				8B529F8C269996690075DDA2 /* DigitAssistorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B529F67269996690075DDA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F56AF2699B23100192A9E /* libsqlite3.dylib */,
+				8B529F68269996690075DDA2 /* Foundation.framework */,
+				8B529F6A269996690075DDA2 /* CoreGraphics.framework */,
+				8B529F6C269996690075DDA2 /* UIKit.framework */,
+				8B529F8D269996690075DDA2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B529F6E269996690075DDA2 /* DigitAssistor */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F56A52699B11300192A9E /* Plan */,
+				8B8F56A12699B0F600192A9E /* 3rdParty */,
+				8B8F569D2699B0B700192A9E /* Util */,
+				8B8F56932699B02100192A9E /* QRCode */,
+				8B8F568F2699AFF400192A9E /* Network */,
+				8B8F56532699AFA400192A9E /* Task */,
+				8B8F564F2699AF3900192A9E /* DB */,
+				8B8F563D2699AE8D00192A9E /* Book */,
+				8B529FB226999B120075DDA2 /* UI */,
+				8B529FA326999A090075DDA2 /* DDGForthPlanTableViewController.h */,
+				8B529FA426999A090075DDA2 /* DDGForthPlanTableViewController.m */,
+				8B529FA526999A090075DDA2 /* DDGMasterTaskViewController.h */,
+				8B529FA626999A090075DDA2 /* DDGMasterTaskViewController.m */,
+				8B529FA726999A090075DDA2 /* DDGSlaveReadViewController.h */,
+				8B529FA826999A090075DDA2 /* DDGSlaveReadViewController.m */,
+				8B529FA926999A090075DDA2 /* DDGTripleProjTableViewController.h */,
+				8B529FAA26999A090075DDA2 /* DDGTripleProjTableViewController.m */,
+				8B529FAB26999A090075DDA2 /* DDGViewController.h */,
+				8B529FAC26999A090075DDA2 /* DDGViewController.m */,
+				8B529F77269996690075DDA2 /* AppDelegate.h */,
+				8B529F78269996690075DDA2 /* AppDelegate.m */,
+				8B529F86269996690075DDA2 /* Images.xcassets */,
+				8B529F6F269996690075DDA2 /* Supporting Files */,
+			);
+			path = DigitAssistor;
+			sourceTree = "<group>";
+		};
+		8B529F6F269996690075DDA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B529F70269996690075DDA2 /* DigitAssistor-Info.plist */,
+				8B529F71269996690075DDA2 /* InfoPlist.strings */,
+				8B529F74269996690075DDA2 /* main.m */,
+				8B529F76269996690075DDA2 /* DigitAssistor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B529F93269996690075DDA2 /* DigitAssistorTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B529F99269996690075DDA2 /* DigitAssistorTests.m */,
+				8B529F94269996690075DDA2 /* Supporting Files */,
+			);
+			path = DigitAssistorTests;
+			sourceTree = "<group>";
+		};
+		8B529F94269996690075DDA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B529F95269996690075DDA2 /* DigitAssistorTests-Info.plist */,
+				8B529F96269996690075DDA2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B529FB226999B120075DDA2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F569A2699B08C00192A9E /* DDGViewCtrlStore.h */,
+				8B8F569B2699B08C00192A9E /* DDGViewCtrlStore.m */,
+				8B529FB326999B2D0075DDA2 /* DDGCusTaskTableViewCell.h */,
+				8B529FB426999B2D0075DDA2 /* DDGCusTaskTableViewCell.m */,
+				8B529FB526999B2D0075DDA2 /* DDGCusTaskTableViewCell.xib */,
+				8B529FB626999B2D0075DDA2 /* DDGGenericLableController.h */,
+				8B529FB726999B2D0075DDA2 /* DDGGenericLableController.m */,
+				8B529FB826999B2D0075DDA2 /* DDGGenericLableController.xib */,
+				8B529FB926999B2D0075DDA2 /* DDGGenericTableCellController.h */,
+				8B529FBA26999B2D0075DDA2 /* DDGGenericTableCellController.m */,
+				8B529FBB26999B2D0075DDA2 /* DDGGenericTableCellController.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		8B8F563D2699AE8D00192A9E /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F563E2699AE9900192A9E /* DDGBook.h */,
+				8B8F563F2699AE9900192A9E /* DDGBook.m */,
+				8B8F56402699AE9900192A9E /* DDGBookStore.h */,
+				8B8F56412699AE9900192A9E /* DDGBookStore.m */,
+				8B8F56422699AE9900192A9E /* DDGBookTaskViewController.h */,
+				8B8F56432699AE9900192A9E /* DDGBookTaskViewController.m */,
+				8B8F56442699AE9900192A9E /* DDGBookTaskViewController.xib */,
+				8B8F56452699AE9900192A9E /* DDGDetailBookInfoViewController.h */,
+				8B8F56462699AE9900192A9E /* DDGDetailBookInfoViewController.m */,
+				8B8F56472699AE9900192A9E /* DDGDetailBookInfoViewController.xib */,
+			);
+			name = Book;
+			sourceTree = "<group>";
+		};
+		8B8F564F2699AF3900192A9E /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F56A92699B13B00192A9E /* DDGSQLiteTaskStore.h */,
+				8B8F56AA2699B13B00192A9E /* DDGSQLiteTaskStore.mm */,
+				8B8F56AB2699B13B00192A9E /* SQLite3Cpp.cpp */,
+				8B8F56AC2699B13B00192A9E /* SQLite3Cpp.hpp */,
+				8B8F56502699AF9400192A9E /* DDGDBExecutor.h */,
+				8B8F56512699AF9400192A9E /* DDGDBExecutor.mm */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		8B8F56532699AFA400192A9E /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F56542699AFC300192A9E /* DDGEventTask.h */,
+				8B8F56552699AFC300192A9E /* DDGEventTask.m */,
+				8B8F56562699AFC300192A9E /* DDGEventTaskViewController.h */,
+				8B8F56572699AFC300192A9E /* DDGEventTaskViewController.m */,
+				8B8F56582699AFC300192A9E /* DDGEventTaskViewController.xib */,
+				8B8F56592699AFC300192A9E /* DDGMallTaskDetailViewController.h */,
+				8B8F565A2699AFC300192A9E /* DDGMallTaskDetailViewController.m */,
+				8B8F565B2699AFC300192A9E /* DDGMallTaskDetailViewController.xib */,
+				8B8F565C2699AFC300192A9E /* DDGMallTaskViewController.h */,
+				8B8F565D2699AFC300192A9E /* DDGMallTaskViewController.m */,
+				8B8F565E2699AFC300192A9E /* DDGMallTaskViewController.xib */,
+				8B8F565F2699AFC300192A9E /* DDGNewTaskViewController.h */,
+				8B8F56602699AFC300192A9E /* DDGNewTaskViewController.m */,
+				8B8F56612699AFC300192A9E /* DDGNewTaskViewController.xib */,
+				8B8F56622699AFC300192A9E /* DDGProjectTask.h */,
+				8B8F56632699AFC300192A9E /* DDGProjectTask.m */,
+				8B8F56642699AFC300192A9E /* DDGProjectViewController.h */,
+				8B8F56652699AFC300192A9E /* DDGProjectViewController.m */,
+				8B8F56662699AFC300192A9E /* DDGProjectViewController.xib */,
+				8B8F56672699AFC300192A9E /* DDGReadTask.h */,
+				8B8F56682699AFC300192A9E /* DDGReadTask.m */,
+				8B8F56692699AFC300192A9E /* DDGShopTask.h */,
+				8B8F566A2699AFC300192A9E /* DDGShopTask.m */,
+				8B8F566B2699AFC300192A9E /* DDGTask.h */,
+				8B8F566C2699AFC300192A9E /* DDGTask.m */,
+				8B8F566D2699AFC300192A9E /* DDGTaskDateTimeViewController.h */,
+				8B8F566E2699AFC300192A9E /* DDGTaskDateTimeViewController.m */,
+				8B8F566F2699AFC300192A9E /* DDGTaskDateTimeViewController.xib */,
+				8B8F56702699AFC300192A9E /* DDGTaskDBManager.cpp */,
+				8B8F56712699AFC300192A9E /* DDGTaskDBManager.hpp */,
+				8B8F56722699AFC300192A9E /* DDGTaskDetailViewController.h */,
+				8B8F56732699AFC300192A9E /* DDGTaskDetailViewController.m */,
+				8B8F56742699AFC300192A9E /* DDGTaskDetailViewController.xib */,
+				8B8F56752699AFC300192A9E /* DDGTaskStore.h */,
+				8B8F56762699AFC300192A9E /* DDGTaskStore.m */,
+				8B8F56772699AFC300192A9E /* DDGTaskViewController.h */,
+				8B8F56782699AFC300192A9E /* DDGTaskViewController.m */,
+			);
+			name = Task;
+			sourceTree = "<group>";
+		};
+		8B8F568F2699AFF400192A9E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F56902699B00900192A9E /* DDGNetworker.h */,
+				8B8F56912699B00900192A9E /* DDGNetworker.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		8B8F56932699B02100192A9E /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F56952699B05A00192A9E /* DDGQRCoderScanViewController.h */,
+				8B8F56962699B05A00192A9E /* DDGQRCoderScanViewController.m */,
+				8B8F56972699B05A00192A9E /* DDGQRCoderScanViewController.xib */,
+			);
+			name = QRCode;
+			sourceTree = "<group>";
+		};
+		8B8F569D2699B0B700192A9E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F569E2699B0C300192A9E /* DDGDTimeCommon.h */,
+				8B8F569F2699B0C300192A9E /* DDGDTimeCommon.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		8B8F56A12699B0F600192A9E /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F56A22699B10700192A9E /* KxMenu.h */,
+				8B8F56A32699B10700192A9E /* KxMenu.m */,
+			);
+			name = 3rdParty;
+			sourceTree = "<group>";
+		};
+		8B8F56A52699B11300192A9E /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F56A62699B12200192A9E /* DDGPlanStore.h */,
+				8B8F56A72699B12200192A9E /* DDGPlanStore.m */,
+			);
+			name = Plan;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B529F64269996690075DDA2 /* DigitAssistor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B529F9D269996690075DDA2 /* Build configuration list for PBXNativeTarget "DigitAssistor" */;
+			buildPhases = (
+				8B529F61269996690075DDA2 /* Sources */,
+				8B529F62269996690075DDA2 /* Frameworks */,
+				8B529F63269996690075DDA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigitAssistor;
+			productName = DigitAssistor;
+			productReference = 8B529F65269996690075DDA2 /* DigitAssistor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B529F8B269996690075DDA2 /* DigitAssistorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B529FA0269996690075DDA2 /* Build configuration list for PBXNativeTarget "DigitAssistorTests" */;
+			buildPhases = (
+				8B529F88269996690075DDA2 /* Sources */,
+				8B529F89269996690075DDA2 /* Frameworks */,
+				8B529F8A269996690075DDA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B529F92269996690075DDA2 /* PBXTargetDependency */,
+			);
+			name = DigitAssistorTests;
+			productName = DigitAssistorTests;
+			productReference = 8B529F8C269996690075DDA2 /* DigitAssistorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B529F5D269996690075DDA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					8B529F8B269996690075DDA2 = {
+						TestTargetID = 8B529F64269996690075DDA2;
+					};
+				};
+			};
+			buildConfigurationList = 8B529F60269996690075DDA2 /* Build configuration list for PBXProject "DigitAssistor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B529F5C269996690075DDA2;
+			productRefGroup = 8B529F66269996690075DDA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B529F64269996690075DDA2 /* DigitAssistor */,
+				8B529F8B269996690075DDA2 /* DigitAssistorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B529F63269996690075DDA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B8F56812699AFC300192A9E /* DDGNewTaskViewController.xib in Resources */,
+				8B8F564B2699AE9900192A9E /* DDGBookTaskViewController.xib in Resources */,
+				8B8F568C2699AFC300192A9E /* DDGTaskDetailViewController.xib in Resources */,
+				8B8F56892699AFC300192A9E /* DDGTaskDateTimeViewController.xib in Resources */,
+				8B8F56842699AFC300192A9E /* DDGProjectViewController.xib in Resources */,
+				8B529F87269996690075DDA2 /* Images.xcassets in Resources */,
+				8B8F567B2699AFC300192A9E /* DDGEventTaskViewController.xib in Resources */,
+				8B8F56992699B05A00192A9E /* DDGQRCoderScanViewController.xib in Resources */,
+				8B529FC126999B2D0075DDA2 /* DDGGenericTableCellController.xib in Resources */,
+				8B529F73269996690075DDA2 /* InfoPlist.strings in Resources */,
+				8B8F567F2699AFC300192A9E /* DDGMallTaskViewController.xib in Resources */,
+				8B8F564D2699AE9900192A9E /* DDGDetailBookInfoViewController.xib in Resources */,
+				8B529FBF26999B2D0075DDA2 /* DDGGenericLableController.xib in Resources */,
+				8B529FBD26999B2D0075DDA2 /* DDGCusTaskTableViewCell.xib in Resources */,
+				8B8F567D2699AFC300192A9E /* DDGMallTaskDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B529F8A269996690075DDA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B529F98269996690075DDA2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B529F61269996690075DDA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B8F56A02699B0C300192A9E /* DDGDTimeCommon.m in Sources */,
+				8B8F567A2699AFC300192A9E /* DDGEventTaskViewController.m in Sources */,
+				8B8F56522699AF9400192A9E /* DDGDBExecutor.mm in Sources */,
+				8B8F56882699AFC300192A9E /* DDGTaskDateTimeViewController.m in Sources */,
+				8B8F56AD2699B13B00192A9E /* DDGSQLiteTaskStore.mm in Sources */,
+				8B8F56AE2699B13B00192A9E /* SQLite3Cpp.cpp in Sources */,
+				8B8F56492699AE9900192A9E /* DDGBookStore.m in Sources */,
+				8B8F564A2699AE9900192A9E /* DDGBookTaskViewController.m in Sources */,
+				8B8F56862699AFC300192A9E /* DDGShopTask.m in Sources */,
+				8B8F56832699AFC300192A9E /* DDGProjectViewController.m in Sources */,
+				8B8F56482699AE9900192A9E /* DDGBook.m in Sources */,
+				8B529F79269996690075DDA2 /* AppDelegate.m in Sources */,
+				8B8F567C2699AFC300192A9E /* DDGMallTaskDetailViewController.m in Sources */,
+				8B8F56852699AFC300192A9E /* DDGReadTask.m in Sources */,
+				8B529FBE26999B2D0075DDA2 /* DDGGenericLableController.m in Sources */,
+				8B8F56872699AFC300192A9E /* DDGTask.m in Sources */,
+				8B529FAF26999A090075DDA2 /* DDGSlaveReadViewController.m in Sources */,
+				8B8F568A2699AFC300192A9E /* DDGTaskDBManager.cpp in Sources */,
+				8B8F564C2699AE9900192A9E /* DDGDetailBookInfoViewController.m in Sources */,
+				8B8F567E2699AFC300192A9E /* DDGMallTaskViewController.m in Sources */,
+				8B529FAE26999A090075DDA2 /* DDGMasterTaskViewController.m in Sources */,
+				8B8F56822699AFC300192A9E /* DDGProjectTask.m in Sources */,
+				8B8F56802699AFC300192A9E /* DDGNewTaskViewController.m in Sources */,
+				8B8F569C2699B08C00192A9E /* DDGViewCtrlStore.m in Sources */,
+				8B8F568D2699AFC300192A9E /* DDGTaskStore.m in Sources */,
+				8B529FC026999B2D0075DDA2 /* DDGGenericTableCellController.m in Sources */,
+				8B8F56A82699B12200192A9E /* DDGPlanStore.m in Sources */,
+				8B529FB126999A090075DDA2 /* DDGViewController.m in Sources */,
+				8B529FBC26999B2D0075DDA2 /* DDGCusTaskTableViewCell.m in Sources */,
+				8B529FAD26999A090075DDA2 /* DDGForthPlanTableViewController.m in Sources */,
+				8B8F568B2699AFC300192A9E /* DDGTaskDetailViewController.m in Sources */,
+				8B8F56792699AFC300192A9E /* DDGEventTask.m in Sources */,
+				8B529FB026999A090075DDA2 /* DDGTripleProjTableViewController.m in Sources */,
+				8B8F56982699B05A00192A9E /* DDGQRCoderScanViewController.m in Sources */,
+				8B529F75269996690075DDA2 /* main.m in Sources */,
+				8B8F56A42699B10700192A9E /* KxMenu.m in Sources */,
+				8B8F568E2699AFC300192A9E /* DDGTaskViewController.m in Sources */,
+				8B8F56922699B00900192A9E /* DDGNetworker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B529F88269996690075DDA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B529F9A269996690075DDA2 /* DigitAssistorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B529F92269996690075DDA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B529F64269996690075DDA2 /* DigitAssistor */;
+			targetProxy = 8B529F91269996690075DDA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B529F71269996690075DDA2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B529F72269996690075DDA2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8B529F96269996690075DDA2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B529F97269996690075DDA2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B529F9B269996690075DDA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B529F9C269996690075DDA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B529F9E269996690075DDA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitAssistor/DigitAssistor-Prefix.pch";
+				INFOPLIST_FILE = "DigitAssistor/DigitAssistor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos6.1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8B529F9F269996690075DDA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitAssistor/DigitAssistor-Prefix.pch";
+				INFOPLIST_FILE = "DigitAssistor/DigitAssistor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos6.1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8B529FA1269996690075DDA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DigitAssistor.app/DigitAssistor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitAssistor/DigitAssistor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DigitAssistorTests/DigitAssistorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8B529FA2269996690075DDA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DigitAssistor.app/DigitAssistor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitAssistor/DigitAssistor-Prefix.pch";
+				INFOPLIST_FILE = "DigitAssistorTests/DigitAssistorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B529F60269996690075DDA2 /* Build configuration list for PBXProject "DigitAssistor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B529F9B269996690075DDA2 /* Debug */,
+				8B529F9C269996690075DDA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B529F9D269996690075DDA2 /* Build configuration list for PBXNativeTarget "DigitAssistor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B529F9E269996690075DDA2 /* Debug */,
+				8B529F9F269996690075DDA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B529FA0269996690075DDA2 /* Build configuration list for PBXNativeTarget "DigitAssistorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B529FA1269996690075DDA2 /* Debug */,
+				8B529FA2269996690075DDA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B529F5D269996690075DDA2 /* Project object */;
+}
